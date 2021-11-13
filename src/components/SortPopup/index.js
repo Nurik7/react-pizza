@@ -26,11 +26,10 @@ export const SortPopup = ({items}) => {
     console.log(active)
   }
 
-
   return (
     <div ref={sortRef} className="sort">
       <div className="sort__label">
-        <svg className={isOpen && 'rotated'}
+        <svg className={isOpen ? 'rotated' : undefined}
              width="10"
              height="6"
              viewBox="0 0 10 6"
