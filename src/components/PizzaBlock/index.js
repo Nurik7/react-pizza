@@ -8,7 +8,6 @@ const PizzaBlock = ({imageUrl, name, price, sizes, types}) => {
   const pizzaTypes = ['тонкое', 'традиционное']
   const [activeSize, setActiveSize] = useState(sizes[0])
   const pizzaSizes = [26, 30, 40]
-  // debugger
   return (
     <div className="pizza-block">
       <img
