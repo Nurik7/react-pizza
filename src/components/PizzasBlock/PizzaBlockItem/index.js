@@ -3,7 +3,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 
 
-const PizzaBlock = ({imageUrl, name, price, sizes, types}) => {
+const PizzaBlockItem = ({imageUrl, name, price, sizes, types}) => {
   const [activeType, setActiveType] = useState(types[0])
   const pizzaTypes = ['тонкое', 'традиционное']
   const [activeSize, setActiveSize] = useState(sizes[0])
@@ -66,7 +66,7 @@ const PizzaBlock = ({imageUrl, name, price, sizes, types}) => {
 };
 
 
-PizzaBlock.propTypes = {
+PizzaBlockItem.propTypes = {
   name: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
@@ -74,4 +74,4 @@ PizzaBlock.propTypes = {
   types: PropTypes.arrayOf(PropTypes.number).isRequired
 }
 
-export default PizzaBlock;
+export default PizzaBlockItem;
